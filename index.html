@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bohnanza</title>
 
-    
+    <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
 </head>
 
 <body>
@@ -13,6 +14,7 @@
 
     </header>
 
+    <div id="firebaseui-auth-container"></div>
     <footer>
 
     </footer>
@@ -41,9 +43,8 @@
         firebase.analytics();
     </script>
 
-    <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
-    // Initialize the FirebaseUI Widget using Firebase.
+   
+
     <script>
         var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
@@ -53,7 +54,7 @@
                 requireDisplayName: false
             }
             ],
-  // Other config options...
+
         });
     </script>
     
