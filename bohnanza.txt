@@ -1,0 +1,104 @@
+BOHNANZA
+
+1. Ecran d'accueil avec authentification
+	-> obligatoire
+			-> firebase authentification
+
+2. Hote lance une partie
+	-> salon initialisé (database ex : room1 avec un bool enabled)
+	-> invitation des joueurs
+		-> par mail ?
+		-> par lien ?
+		
+3. Calcul du nombre de joueurs et distribution des cartes
+	Tirage random de 5 cartes
+	Affichage des cartes dans l'espace perso
+	Mise à jour des cartes disponibles dans le DB
+
+4. Reste va dans la pioche
+
+5. C'est le tour du premier joueur
+	Il DOIT planter sa première carte
+	Il PEUT planter sa deuxième carte
+	
+	Les deux prochaines cartes de la pioche s'affichent dans l'espace public (mise à jour du lien href ?)
+
+6. Phase de négociation
+	Le joueur peut cliquer sur une des deux cartes et :
+		Planter
+			Par dessus son champ si même carte
+			Choisir une carte à déplanter sinon
+		La donner à un joueur (via Login)
+			Celui ci pourra alors lui aussi
+				Planter par dessus
+				Ou à la place
+
+7. Pioche
+	Les trois premières cartes de la pioche s'ajoute à la main du joueur
+
+8. C'est au joueur suivant de jouer (retour point 5)
+
+
+Interface de la partie
+
+	Pioche (nombre de cartes restantes)	Cartes dispos à la plantation		Champs des autres joueurs (quand on passe la souris sur le login ?)
+	
+	
+				Champs perso						Main perso
+							
+
+
+
+
+
+
+Données à sauvegarder
+
+1. Users	
+	Login
+	Mail
+	Couleur
+	Main
+	Champ 1
+	Champ 2
+	Wallet
+	Nombre de parties gagnées
+
+
+2. Cartes
+	Nombre total
+	Nombre par famille
+	Valeur des cartes
+	Cartes disponibles (pioche)
+	Défausse (qui sera rejouée quand la pioche est vide, et ce 2 fois)
+	Cartes disponibles à la plantation
+
+
+
+
+
+
+Mise à jour automatique
+	Creuser autour des v-model qui permettent une maj en temps réel
+
+
+
+0626152812 PRO
+
+pascal.jord@orange.fr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
